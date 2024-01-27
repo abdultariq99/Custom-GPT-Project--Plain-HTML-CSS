@@ -9,7 +9,7 @@ body, html{
     font-family: 'Inter', sans-serif !important;
 }
 
-
+/* Header and Navbar */
 .navbar{
     width: 80%;
     border-radius: 0px 0px 10px 10px;
@@ -82,6 +82,7 @@ li{
 
 }
 
+/*Main Hero Section */
 #hero-main{
     width: 100%;
     height: 100vh;
@@ -115,7 +116,7 @@ li{
     margin-bottom: 60px;
 }
 
-#hero-1-heading-small::before{
+.underline{
     content: "";
     position: absolute;
     top: 80px;
@@ -149,6 +150,21 @@ li{
     width: 100%;
     height: 80vh;
     background-color: #000000;
+    color: white
+}
+
+#info-container{
+    width: 20%;
+}
+
+.col{
+    background-color: blue;
+    border: 2px solid black
+}
+
+#hero-2-heading{
+    display: block;
+    color: white
 }
 
 @keyframes slideInLeft {
@@ -159,7 +175,7 @@ li{
   }
 
 @media (max-width: 834px) {
-    #hero-1-heading-small::before{
+    .underline{
         margin-top: -10px;
     }
     #hero-content-1{
@@ -172,6 +188,12 @@ li{
     }
   }
 @media (max-width: 375px) {
+    #hero-1-heading-small{
+        margin-bottom: 40px;
+    }
+    .underline{
+        margin-top: -25px;
+    }
     #hero-content-1{
         width: 311px;
         height: 281px;
