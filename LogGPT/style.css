@@ -32,9 +32,12 @@ body{
 #logo-name{
     position: absolute;
     left: 40px;
+    margin-top: 3px;
+    top: 0;
     color: white;
     font-size: 20px;
     font-weight: 700;
+    transition: all 0.5s ease-out;
 }
 
 .blue-span{
@@ -66,15 +69,10 @@ body{
 
 }
 
-#sidebar-button{
-    height: 50px;
-    width: 200px;
-    border-radius: 10px;
-    background-color: var(--brand-color);
-    font-size: 16px;
+#new-analysis-btn{
+    font-size: 18px;
     margin-bottom: 30px;
-    color: black;
-    font-weight: 700;
+
 }
 
 #gpt-body{
@@ -88,4 +86,15 @@ body{
         left: 25px;
         top: 80px;
     }
+  }
+@media (max-width: 462px) {
+    #logo-name img{
+        width: 40px;
+        height: 40px;
+    }
+    #logo-name{
+        font-size: 14px;
+    }
+
+
   }
