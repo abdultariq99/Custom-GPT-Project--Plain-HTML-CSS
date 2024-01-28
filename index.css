@@ -259,7 +259,7 @@ li{
 #hero-4-heading{
     margin-bottom: -50px;
     padding-top: 60px;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 #hero-4-heading h2{
@@ -301,75 +301,88 @@ li{
 
 /*Footer Section*/
 
-.site-footer
-{
-  background-color:#0e1111;
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
+.site-footer{
+
+    background-color:#0e1111;
+    padding:45px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color:#8d8d8d;
+}
+
+.site-footer hr{
+
+    border-top-color:#bbb;
+    opacity:0.5
+
+}
+
+.site-footer hr.small{
+
+    margin:20px 0
+}
+.site-footer h6 {
+
+    color:#fff;
+    font-size:16px;
+    text-transform:uppercase;
+    margin-top:5px;
+    letter-spacing:2px
+}
+
+.site-footer a {
+
   color:#737373;
 }
-.site-footer hr
-{
-  border-top-color:#bbb;
-  opacity:0.5
-}
-.site-footer hr.small
-{
-  margin:20px 0
-}
-.site-footer h6
-{
-  color:#fff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
-}
-.site-footer a
-{
-  color:#737373;
-}
-.site-footer a:hover
-{
-  color:#3366cc;
+
+.site-footer a:hover {
+
+  color:#0fcefd;
   text-decoration:none;
 }
-.footer-links
-{
-  padding-left:0;
-  list-style:none
+
+.footer-links {
+
+    padding-left:0;
+    list-style:none;
+
 }
-.footer-links li
-{
-  display:block
+
+.footer-links li{
+
+    display:block;
+
 }
-.footer-links a
-{
-  color:#737373
+
+.footer-links a {
+
+    color:#737373;
+
 }
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover {
+
+    color:#0fcefd;
+    text-decoration:none;
 }
-.footer-links.inline li
-{
-  display:inline-block
+
+.footer-links.inline li {
+
+    display:inline-block
 }
-.site-footer .social-icons
-{
-  text-align:right
+.site-footer .social-icons {
+
+    text-align:right
 }
-.site-footer .social-icons a
-{
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
-  border-radius:100%;
-  background-color:#33353d
+.site-footer .social-icons a {
+
+    width:40px;
+    height:40px;
+    line-height:40px;
+    margin-left:6px;
+    margin-right:0;
+    border-radius:100%;
+    background-color:#33353d
 }
 .copyright-text
 {
