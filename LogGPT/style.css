@@ -1,0 +1,91 @@
+:root{
+    --sidebar-color : #141414;
+    --body-color : #28283c;
+    --navbar-color: #1f1e1e;
+    --brand-color: #0fcefd;
+}
+
+body, html{
+    width: 100%;
+    height: 100vh;
+    margin: 0px !important;
+    padding: 0px !important;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#header{
+    height: 60px;
+    width: 100%;
+    background-color: var(--navbar-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#logo-name{
+    position: absolute;
+    left: 40px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.blue-span{
+    color: #0fcefd;
+}
+
+#log-type{
+    color: white;
+    font-weight: 700;
+}
+
+/*Main Container*/
+#main-container{
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+}
+
+#side-bar{
+    width: 250px;
+    background-color: var(--sidebar-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+
+}
+
+#sidebar-button{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: var(--brand-color);
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: black;
+    font-weight: 700;
+}
+
+#gpt-body{
+    flex-grow: 1;
+    background-color: var(--body-color);
+}
+
+
+@media (max-width: 900px) {
+    #logo-name{
+        left: 25px;
+        top: 80px;
+    }
+  }
