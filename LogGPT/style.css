@@ -1,8 +1,14 @@
 :root{
-    --sidebar-color : #141414;
-    --body-color : #28283c;
-    --navbar-color: #1f1e1e;
+    --main-color : rgb(3, 0, 31);
     --brand-color: #0fcefd;
+    --border-color: rgb(100,100,100);
+    --button-color: #5A4BFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body, html{
@@ -22,25 +28,20 @@ body{
 #header{
     height: 60px;
     width: 100%;
-    background-color: var(--navbar-color);
+    background-color: var(--main-color);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    box-shadow: 10px 10px 10px black;
+    border-bottom: 1px solid var(--border-color);
 
 }
 
 #logo-name{
-    position: absolute;
-    left: 40px;
     margin-top: 3px;
-    top: 0;
     color: white;
     font-size: 20px;
     font-weight: 700;
-    transition: all 0.4s ease-out;
-    z-index: 2;
 }
 
 .blue-span{
@@ -57,32 +58,66 @@ body{
     margin: 0;
     padding: 0;
     flex-grow: 1;
-    background-color: blue;
     display: flex;
     flex-direction: row;
 }
 
 #side-bar{
     width: 250px;
-    background-color: var(--sidebar-color);
+    background-color: var(--main-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
-    box-shadow: 10px 10px 10px black;
-    z-index: 1;
+    justify-content: space-between;
+    border-right: 1px solid var(--border-color);
 
 }
 
 #new-analysis-btn{
     font-size: 18px;
     margin-bottom: 30px;
+    background-color: var(--button-color);
+    border-radius: 4px !important;
+    border: none;
 
+}
+
+.btn:focus {
+    border: none !important;
+  }
+
+ul li{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+ul li:hover{
+    color: var(--button-color);
+}
+
+#lower-side{
+    border-top: 1px solid var(--border-color);
+    width: 119%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+i{
+    margin-right: 10px;
+    font-size: 18px;
 }
 
 #gpt-body{
     flex-grow: 1;
-    background-color: var(--body-color);
+    background-color: var(--main-color);
 }
 
 
