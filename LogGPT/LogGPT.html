@@ -24,41 +24,40 @@
 
   <body>
     <header id="header">
-      <h4 id="log-type">
-        LogGPT Container Log Analyzer
-      </h4>
-    </header>
-    <div class="container-fluid" id="main-container">
-      <div id="side-bar" class="container-fluid">
-        <div id="logo-name">
-          <img src="Assets/log_gpt-logo.png" width="50px" height="50px" />
+      <nav>
+         <a href="LogGPT.html"><button id="reset-button" class="btn btn-primary"><i class="fa-regular fa-pen-to-square"></i></button></a>
+         <div id="logo-name">
+          <img src="Assets/LogGPT browser Icon.png" width="40px" height="40px" />
           Open Sense AI
         </div>
-        <a href="LogGPT.html"
-          ><button
-            type="button"
-            id="new-analysis-btn"
-            class="btn btn-primary btn-lg shadow-none"
-          >
-            New Analysis
-          </button></a
-        >
-        <div id="lower-side">
-          <ul>
-            <a href="#"><li><i class="fa-solid fa-file"></i>View Sample AI Report</li></a>
-            <a href="#"><li><i class="fa-solid fa-microchip"></i>How Report is Created by AI</li></a>
-            <a href="#"><li><i class="fa-solid fa-shield-halved"></i>Data Privacy Policy</li></a>
-            <a href="#"><li><i class="fa-solid fa-comment"></i>Feedback</li></a>
-            <a href="#"><li><i class="fa-solid fa-question"></i>Help & FAQs</li></a>
-          </ul>
-        </div>
-      </div>
+        <div id="main-heading"><h5>LogGPT Container Log Analyzer</h5></div>
+          <div class="dropdown">
+            <a class="btn btn-secondary" id="dropdown-button" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-question"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <a href="#" class="dropdown-item"><li><i class="fa-solid fa-file"></i>View Sample AI Report</li></a>
+              <a href="#" class="dropdown-item"><li><i class="fa-solid fa-microchip"></i>How Report is Created by AI</li></a>
+              <a href="#" class="dropdown-item"><li><i class="fa-solid fa-shield-halved"></i>Data Privacy Policy</li></a>
+              <a href="#" class="dropdown-item"><li><i class="fa-solid fa-comment"></i>Feedback</li></a>
+              <a href="#" class="dropdown-item"><li><i class="fa-solid fa-question"></i>Help & FAQs</li></a>
+            </ul>
+          </div>
+      </nav>
+    </header>
+    <div class="container-fluid" id="main-container">
       <div id="gpt-body" class="container-fluid">
         <div id="text-box">
-          <h1>LogGPT ®</h1>
+          <h1>LogGPT &reg;</h1>
           <h3>Generative AI for Advanced Container Log Trouble-Shooting</h3>
           <h4>Unlock swift, comprehensive log insights and actionable solutions powered by ChatGPT</h4>
           <h6 id="small-heading" class="animate__animated animate__pulse">Paste or upload your .txt log file to begin</h6>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Analyze Log & Create Report
+          </label>
         </div>
         <div id="input-container">
           <label for="file-upload" class="custom-file-upload">

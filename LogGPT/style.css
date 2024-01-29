@@ -1,7 +1,7 @@
 :root{
-    --main-color : rgb(3, 0, 31);
+    --main-color : white;
     --brand-color: #0fcefd;
-    --border-color: rgb(100,100,100);
+    --font-color: #333333;
     --button-color: #5A4BFF;
 }
 
@@ -16,7 +16,7 @@ body, html{
     height: 100vh;
     margin: 0px !important;
     padding: 0px !important;
-    font-family: "poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body{
@@ -29,68 +29,75 @@ body{
     height: 60px;
     width: 100%;
     background-color: var(--main-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
     border-bottom: 1px solid var(--border-color);
 
 }
 
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+#main-heading{
+    margin-left: -15px;
+    margin-top: 5px;
+}
+
+#main-heading h5{
+    color: #333333;
+    font-weight: 700;
+}
+
+#reset-button{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    background-color: white;
+    border: 1px solid rgb(167, 162, 162);
+}
+
+#reset-button i{
+    color: black;
+}
+
+.btn:hover{
+    background-color: rgb(223, 223, 223) !important;
+}
+
+.btn:focus {
+    border: 1px solid rgb(167, 162, 162) !important;
+}
+
 #logo-name{
-    margin-top: 10px;
-    margin-left: -60px;
-    color: white;
+    position: absolute;
+    left: 80px;
+    color: var(--font-color);
     font-size: 16px;
     font-weight: 700;
 }
 
-.blue-span{
-    color: white;
+.dropdown{
+    margin-right: 15px;
 }
 
-#log-type{
-    color: whitesmoke;
-    font-weight: 700;
-}
-
-/*Main Container*/
-#main-container{
-    margin: 0;
-    padding: 0;
-    flex-grow: 1;
+#dropdown-button{
+    width: 40px;
+    height: 40px;
     display: flex;
-    flex-direction: row;
-}
-
-#side-bar{
-    width: 300px;
-    background-color: var(--main-color);
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    border-right: 1px solid var(--border-color);
-
+    background-color: white;
+    border: 1px solid rgb(167, 162, 162);
 }
 
-#new-analysis-btn{
-    width: 200px;
-    font-size: 18px;
-    margin-bottom: 30px;
-    background-color: var(--button-color);
-    border-radius: 4px !important;
-    border: none;
-    margin-bottom: -150px;
-
-}
-
-.btn:focus {
-    border: none !important;
-  }
-
-ul{
-    margin-bottom: -15px;
+#dropdown-button i{
+    color: black
 }
 
 ul li{
@@ -98,19 +105,11 @@ ul li{
     list-style: none;
     margin-bottom: 15px;
     font-size: 15px;
-    color: whitesmoke;
+    color: var(--font-color);
 }
 
-ul li:hover{
-    color: var(--button-color);
-}
-
-#lower-side{
-    border-top: 1px solid var(--border-color);
-    width: 119%;
-    height: 250px;
-    display: flex;
-    align-items: center;
+.dropdown-menu a:focus{
+    background-color: rgb(189, 189, 189) !important;
 }
 
 a{
@@ -120,11 +119,20 @@ a{
 i{
     margin-right: 10px;
     font-size: 18px;
-    color: whitesmoke;
+    color: var(--font-color);
+}
+
+/*Main Container*/
+#main-container{
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    position: relative;
 }
 
 #gpt-body{
-    flex-grow: 1;
     background-color: var(--main-color);
     display: flex;
     flex-direction: column;
@@ -132,16 +140,34 @@ i{
     justify-content: space-between;
 }
 
+.form-check{
+    position: absolute;
+    bottom: 90px;
+    right: 330px;
+}
+
+.form-check-input{
+    border: 1px solid rgba(0, 0, 0, 0.247);
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
 #text-box{
     margin-top: 70px;
     text-align: center;
-    color: whitesmoke;
+    color: var(--font-color);
+}
+
+#text-box h1{
+    font-weight: 700;
 }
 
 #small-heading{
     font-style: italic;
     margin-top: 80px;
-    color: rgba(196, 196, 196, 0.493);
+    color: var(--font-color);
 }
 
 .animate__animated.animate__pulse {
@@ -151,7 +177,7 @@ i{
 
 #input-container{
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -162,14 +188,16 @@ i{
 }
 
 #input-box{
-    width: 70%;
-    height: 55px;
-    background-color: rgba(28,30,58,1);
+    width: 50%;
+    height: 60px;
+    background-color: white;
     outline: none;
-    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.247);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+    border-right: none;
+    border-left: none;
     padding: 20px;
-    color: whitesmoke;
-    letter-spacing: 1px;
+    color: black;
 }
 
 input[type="file"] {
@@ -178,32 +206,48 @@ input[type="file"] {
 
 .custom-file-upload{
     display: block;
-    background-color: rgba(28,30,58,1);
-    height: 55px !important;
+    background-color: white;
+    height: 60px !important;
     width: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.fa-paperclip{
-    font-size: 24px;
-    margin-left: 20px;
-}
-.fa-paper-plane{
-    font-size: 24px;
-    margin-right: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.247);
+    border-left: 1px solid rgba(0, 0, 0, 0.247);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 #submit-chat{
-    background-color: rgba(28,30,58,1);
-    height: 55px !important;
+    background-color: white;
+    height: 60px !important;
     width: 30px;
     border:none;
     display:flex;
     align-items: center;
     justify-content: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.247);
+    border-right: 1px solid rgba(0, 0, 0, 0.247);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
+.fa-paperclip{
+    font-size: 24px;
+    margin-left: 20px;
+    color: black;
+}
+.fa-paper-plane{
+    font-size: 24px;
+    margin-right: 30px;
+    color: black;
+}
+
+.fa-paper-plane .fa-paperclip:hover{
+    background-color: var(--button-color)
+}
+
 
 @media (max-width: 900px) {
     #logo-name{
