@@ -15,7 +15,10 @@
     <header class="header d-flex justify-content-center">
     <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Log Sense <span class="blue-span">AI</span></a>
+          <div class="navbar-brand">
+          <img src="Assets/MainLogo.png" width="40px" height="40px" />
+          <a class="navbar-brand" href="index.html">Log Sense <span class="blue-span">AI</span></a>
+          </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <img src="Assets/menu-bar.png"></img>
           </button>
@@ -42,10 +45,15 @@
         <!--First/Main Section of the Website-->
 
     <section class="hero container-fluid" id="hero-main">
+      <div id="log-type-buttons">
+      <a href="LogGPT/LogGPT.html"><button class="btn btn-primary btn-lg hero-1-buttons">LogGPT for Container Logs</button></a>
+      <a href="LogGPT/LogGPT.html"><button class="btn btn-primary btn-lg hero-1-buttons">LogGPT for System Logs</button></a>
+      <a href="LogGPT/LogGPT.html"><button class="btn btn-primary btn-lg hero-1-buttons">LogGPT for Application Logs</button></a>
+      <a href="LogGPT/LogGPT.html"><button class="btn btn-primary btn-lg hero-1-buttons">LogGPT for Web Server Logs</button></a>
+    </div>
         <div class="hero-content container-fluid d-flex flex-column justify-content-center" id="hero-content-1">
             <div class="underlined-heading"><i class="underline" id="underline-1"></i><h3 class="hero-1-headings" id="hero-1-heading-small">LogGPT - An <span class="blue-span">AI</span> Driven Analysis Solution</h3></div>
             <h1 class="hero-1-headings" id="hero-1-heading-large">Generative <span class="blue-span">AI</span> for Advanced Log Trouble-Shooting</h1>
-            <a href="LogGPT/LogGPT.html"><button class="btn btn-primary btn-lg" id="hero-1-button">Start LogGPT</button></a>
         </div>
         </section>
 

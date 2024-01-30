@@ -119,6 +119,7 @@ ul li{
 
 a{
     text-decoration: none;
+    color: #333333;
 }
 
 i{
@@ -192,6 +193,7 @@ i{
 }
 
 .animate__animated.animate__pulse {
+    margin-top: -30px;
     --animate-duration: 2s;
     animation-iteration-count:infinite;
   }
