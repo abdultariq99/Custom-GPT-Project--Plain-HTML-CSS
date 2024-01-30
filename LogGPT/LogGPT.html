@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,55 +25,138 @@
   <body>
     <header id="header">
       <nav>
-         <a href="LogGPT.html"><button id="reset-button" class="btn btn-primary"><i class="fa-regular fa-pen-to-square"></i></button></a>
-         <div id="logo-name">
-          <img src="Assets/LogGPT browser Icon.png" width="40px" height="40px" />
+        <a href="LogGPT.html"
+          ><button id="reset-button" class="btn btn-primary">
+            <i class="fa-regular fa-pen-to-square"></i></button
+        ></a>
+        <div id="logo-name">
+          <img src="Assets/MainLogo.png" width="40px" height="40px" />
           Open Sense AI
         </div>
-        <div id="main-heading"><h5>LogGPT Container Log Analyzer</h5></div>
-          <div class="dropdown">
-            <a class="btn btn-secondary" id="dropdown-button" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-question"></i>
+        <div id="main-heading">
+          <h5>
+            <span id="heading-span">Container Log</span>GPT &reg; Analyzer
+          </h5>
+        </div>
+        <div class="dropdown">
+          <a
+            class="btn btn-secondary"
+            id="dropdown-button"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-question"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <a href="#" class="dropdown-item">
+              <li><i class="fa-solid fa-file"></i>View Sample AI Report</li>
             </a>
-            <ul class="dropdown-menu">
-              <a href="#" class="dropdown-item"><li><i class="fa-solid fa-file"></i>View Sample AI Report</li></a>
-              <a href="#" class="dropdown-item"><li><i class="fa-solid fa-microchip"></i>How Report is Created by AI</li></a>
-              <a href="#" class="dropdown-item"><li><i class="fa-solid fa-shield-halved"></i>Data Privacy Policy</li></a>
-              <a href="#" class="dropdown-item"><li><i class="fa-solid fa-comment"></i>Feedback</li></a>
-              <a href="#" class="dropdown-item"><li><i class="fa-solid fa-question"></i>Help & FAQs</li></a>
-            </ul>
-          </div>
+            <a href="#" class="dropdown-item">
+              <li>
+                <i class="fa-solid fa-microchip"></i>How Report is Created by AI
+              </li>
+            </a>
+            <a href="#" class="dropdown-item">
+              <li>
+                <i class="fa-solid fa-shield-halved"></i>Data Privacy Policy
+              </li>
+            </a>
+            <a href="#" class="dropdown-item">
+              <li><i class="fa-solid fa-comment"></i>Feedback</li>
+            </a>
+            <a href="#" class="dropdown-item">
+              <li><i class="fa-solid fa-question"></i>Help & FAQs</li>
+            </a>
+          </ul>
+        </div>
       </nav>
     </header>
     <div class="container-fluid" id="main-container">
       <div id="gpt-body" class="container-fluid">
         <div id="text-box">
-          <h1>LogGPT &reg;</h1>
-          <h3>Generative AI for Advanced Container Log Trouble-Shooting</h3>
-          <h4>Unlock swift, comprehensive log insights and actionable solutions powered by ChatGPT</h4>
-          <h6 id="small-heading" class="animate__animated animate__pulse">Paste or upload your .txt log file to begin</h6>
+          <h3 id="first-line"></h3>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-          <label class="form-check-label" for="flexCheckDefault">
-            Analyze Log & Create Report
-          </label>
-        </div>
+        <ul id="form-check-list">
+          <li>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Error Insights & Solutions
+              </label>
+            </div>
+          </li>
+          <li>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Performance Insights
+              </label>
+            </div>
+          </li>
+          <li>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Full Analysis Report
+              </label>
+            </div>
+          </li>
+          <li>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Interactive Query
+              </label>
+            </div>
+          </li>
+        </ul>
         <div id="input-container">
           <label for="file-upload" class="custom-file-upload">
             <i class="fa-solid fa-paperclip"></i>
-            <input id="file-upload" type="file"/>
-        </label>
-          <input id="input-box" type="text" placeholder="Paste or upload your .txt log file here to begin"></input>
-          <button id="submit-chat" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+            <input id="file-upload" type="file" />
+          </label>
+          <input
+            id="input-box"
+            type="text"
+            placeholder="Paste or upload your .txt log file here to begin"
+          />
+          <button id="submit-chat" type="submit">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
         </div>
       </div>
     </div>
+    <script src="LogGPT.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="https://kit.fontawesome.com/6e7d2aeaa3.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/6e7d2aeaa3.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
