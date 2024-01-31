@@ -89,7 +89,8 @@ li{
 
 }
 
-/*Main Hero Section */
+/*Main Section/Section 1 */
+
 #hero-main{
     width: 100%;
     height: 100vh;
@@ -98,7 +99,7 @@ li{
     position: relative;
 }
 
-#log-type-buttons{
+#main-section-buttons-container{
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -106,7 +107,7 @@ li{
     padding-top: 120px;
 }
 
-.hero-1-buttons{
+.section-1-buttons{
     margin-top: 16px;
     width: 250px;
     height: 50px;
@@ -116,13 +117,13 @@ li{
     border-color: var(--font-color-2);
 }
 
-.hero-1-buttons:hover{
+.section-1-buttons:hover{
     background-color: transparent;
     box-shadow: 0 0 20px var(--font-color-2);
     border: 3px solid var(--font-color-2);
 }
 
-#hero-content-1{
+#main-section-content{
     height: 200px;
     width: 453px;
     position: absolute;
@@ -138,11 +139,11 @@ li{
     padding-right: 30px;
 }
 
-.hero-1-headings{
+.section-1-headings{
     color:white;
 }
 
-#hero-1-heading-small{
+#section-1-heading-small{
     font-size: 16px;
     margin-bottom: 10px;
 }
@@ -159,7 +160,7 @@ li{
     animation: 1s ease-out 0s 1 slideInLeft;
 }
 
-#hero-1-heading-large{
+#section-1-heading-large{
     font-size: 32px;
     margin-top: 20px;
 }
@@ -181,15 +182,13 @@ li{
     margin-top: 50px;
 }
 
-#hero-2-heading{
+.section-2-3-5-heading{
     margin: 30px;
     font-weight: 700;
-}
-
-#hero-2-heading{
     margin-bottom: 70px;
     color: var(--font-color-1);
 }
+
 
 #underline-2{
     margin-top: -145px;
@@ -569,14 +568,14 @@ li{
     #underline-1{
         margin-top: -30px;
     }
-    #hero-content-1{
+    #main-section-content{
         width: 356px;
         right: 70px;
     }
-    #hero-1-heading-large{
+    #section-1-heading-large{
         font-size: 28px;
     }
-    #log-type-buttons{
+    #main-section-buttons-container{
         right: 120px;
     }
     #corner-decor-1-2{ 
@@ -610,21 +609,21 @@ li{
   }
 
 @media (max-width: 375px) {
-    #hero-1-heading-small{
+    #section-1-heading-small{
         margin-bottom: 40px;
     }
     #underline-1{
         margin-top: -25px;
     }
     
-    #hero-content-1{
+    #main-section-content{
         width: 311px;
         right: 32px;
     }
-    #hero-1-heading-large{
+    #section-1-heading-large{
         font-size: 26px;
     }
-    #log-type-buttons{
+    #main-section-buttons-container{
         right: 85px;
         
     }
