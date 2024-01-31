@@ -4,6 +4,17 @@
     --font-color-2: #0fcefd;
 }
 
+/*Universal Properties*/
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Decoment Properties*/
+
 body, html{
     background-color: var(--primary-color);
     width: 100%;
@@ -168,7 +179,7 @@ li{
 
 /*Second Hero Section*/
 
-#hero-2{
+#section-2{
     width: 100%;
     height: 120vh;
     padding-top: 35px;
@@ -176,7 +187,7 @@ li{
     background-color: #000000;
 }
 
-#info-container{
+.info-container-2-3{
     width: 100%;
     position: relative;
     margin-top: 50px;
@@ -196,29 +207,23 @@ li{
     height: 40px;
 }
 
-.hero-2-flex-items{
+.section-2-3-flex-items{
     height: 450px;
     width: 450px;
 }
 
-#hero-2-side-1{
+#section-2-left-side{
     display: flex;
     align-items: center;
     font-size: 20px;
 }
 
-#second-list{
-    margin: 0px;
-}
 
-#second-list li::marker{
-    color: #0fcefd;
-}
-
-#hero-2-side-2{
+.section-2-3-right-side{
     position: relative;
 }
-#hero-2-side-2 img{
+
+.section-2-3-right-side img{
     margin-top: 40px;
 }
 
@@ -228,15 +233,9 @@ li{
     right: -47px;
 }
 
-#corner-decor-1-2{ 
-    position: absolute;
-    left: 10px;
-    top: -10px;
-}
-
 /*Third Section*/
 
-#hero-3{
+#section-3{
     width: 100%;
     min-height: 120vh;
     height: auto;
@@ -245,7 +244,12 @@ li{
     color: white;
 }
 
-.hero-3-buttons{
+#section-3-buttons-container{
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.section-3-buttons{
     margin-top: 16px;
     width: 250px;
     height: 70px;
@@ -255,55 +259,39 @@ li{
     border-color: var(--font-color-2);
 }
 
-#section-3-buttons-container{
-    padding-top: 20px;
-    margin-left: 20px;
-}
 
-.hero-3-buttons:hover{
+.section-3-buttons:hover{
     background-color: transparent;
     box-shadow: 0 0 20px var(--font-color-2);
     border: 3px solid var(--font-color-2);
 }
 
-#hero-3-container{
-    width: 100%;
-    height: 100%;
-    
+.section-3-5-content-box{
+    padding-top: 80px;
 }
 
-
-.hero-3-flex-items{
-    height: 250px;
-    width: 250px;
-    margin: auto;
-    position: relative;
-}
-
-.highlight-heading{
-    font-weight: 700;
-}
-
-#section-3-content-box{
-    padding-top: 100px;
+#underline-3{
+    margin-top: -145px;
+    min-width: 64%;
+    height: 40px;
 }
 
 /*Section 4*/
 
-#hero-4{
+#section-4{
     width: 100%;
     min-height: 100vh;
     height: auto;
     background-color: #0fcefd;
 }
 
-#hero-4-heading{
+#section-4-heading{
     margin-bottom: -50px;
     padding-top: 60px;
     margin-left: 50px;
 }
 
-#hero-4-heading h2{
+#section-4-heading h2{
     font-weight: 700;
     color: #000000;
 }
@@ -328,6 +316,10 @@ li{
     font-weight: 700;
 }
 
+iframe{
+    border: 0px;
+}
+
 /*Section 5*/
 
 #section-5{
@@ -337,6 +329,12 @@ li{
     padding-top: 35px;
     background-color: #0e1111;
     color: white;
+}
+
+#underline-5{
+    margin-top: -145px;
+    min-width: 64%;
+    height: 40px;
 }
 
 #section-5-info{
@@ -489,9 +487,9 @@ li{
 }
 .social-icons
 {
-  padding-left:0;
-  margin-bottom:0;
-  list-style:none
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none
 }
 .social-icons li
 {
@@ -523,7 +521,7 @@ li{
 }
 .social-icons a:active,.social-icons a:focus,.social-icons a:hover
 {
-  color:#fff;
+    color:#fff;
   background-color:#29aafe
 }
 .social-icons.size-sm a
@@ -583,32 +581,32 @@ li{
     }
   }
 @media (max-width: 832px) {
-    #hero-2-side-2{
+    .section-2-3-right-side{
         display: none;
     }
-    #hero-2-side-1{
+    #section-2-left-side{
         margin-top: -120px;
     }
+    
+}
 
-  }
-
-  @media (max-width:767px)
-  {
+@media (max-width:767px)
+{
     .social-icons li.title
     {
-      display:block;
-      margin-right:0;
-      font-weight:600
+        display:block;
+        margin-right:0;
+        font-weight:600
     }
   }
 
 @media (max-width: 610px) {
-    #hero-2{
+    #section-2{
         height: 100vh;
     } 
   }
 
-@media (max-width: 375px) {
+  @media (max-width: 375px) {
     #section-1-heading-small{
         margin-bottom: 40px;
     }
@@ -627,4 +625,23 @@ li{
         right: 85px;
         
     }
+}
+    @media (max-width:991px)
+    {
+      .site-footer [class^=col-]
+      {
+        margin-bottom:30px
+      }
+     
+}
+    @media (max-width:767px)
+    {
+      .site-footer
+      {
+        padding-bottom:0
+      }
+      .site-footer .copyright-text,.site-footer .social-icons
+      {
+        text-align:center
+      }
 }
