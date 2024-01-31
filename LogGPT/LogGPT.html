@@ -18,21 +18,21 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="LogGPT.css" />
+    <title>LogGPT</title>
   </head>
 
   <body>
     <header id="header">
       <nav>
-        <a href="LogGPT.html"
-          ><button id="reset-button" class="btn btn-primary">
-            <i class="fa-regular fa-pen-to-square"></i></button
-        ></a>
-        <div id="logo-name">
-          <a href="/index.html"><img src="Assets/MainLogo.png" width="40px" height="40px" />
-          Log Sense AI
+        <a href="LogGPT.html" class="btn btn-primary" id="reset-button">
+          <i class="fa-regular fa-pen-to-square"></i>
         </a>
+        <div id="logo-name">
+          <a href="/index.html"
+            ><img src="Assets/MainLogo.png" alt="Logo" width="40" height="40" />
+            Log Sense AI
+          </a>
         </div>
         <div id="main-heading">
           <h5>
@@ -51,25 +51,36 @@
             <i class="fa-solid fa-question"></i>
           </a>
           <ul class="dropdown-menu">
-            <a href="#" class="dropdown-item">
-              <li><i class="fa-solid fa-file"></i>View Sample AI Report</li>
-            </a>
-            <a href="#" class="dropdown-item">
-              <li>
-                <i class="fa-solid fa-microchip"></i>How Report is Created by AI
-              </li>
-            </a>
-            <a href="#" class="dropdown-item">
-              <li>
-                <i class="fa-solid fa-shield-halved"></i>Data Privacy Policy
-              </li>
-            </a>
-            <a href="#" class="dropdown-item">
-              <li><i class="fa-solid fa-comment"></i>Feedback</li>
-            </a>
-            <a href="#" class="dropdown-item">
-              <li><i class="fa-solid fa-question"></i>Help & FAQs</li>
-            </a>
+            <li>
+              <a href="#" class="dropdown-item"
+                ><i class="fa-solid fa-file"></i>View Sample AI Report</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="dropdown-item"
+                ><i class="fa-solid fa-microchip"></i>How Report is Created by
+                AI
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="dropdown-item"
+                ><i class="fa-solid fa-shield-halved"></i>Data Privacy Policy
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="dropdown-item"
+                ><i class="fa-solid fa-comment"></i>Feedback</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="dropdown-item"
+                ><i class="fa-solid fa-question"></i>Help & FAQs</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
@@ -79,7 +90,9 @@
         <div id="text-box">
           <h3 id="first-line"></h3>
         </div>
-        <h6 class="animate__animated animate__pulse">Paste or Upload your .txt log file to begin</h6>
+        <h6 class="animate__animated animate__pulse">
+          Paste or Upload your .txt log file to begin
+        </h6>
         <ul id="form-check-list">
           <li>
             <div class="form-check">

@@ -1,6 +1,6 @@
-var i = 0;
-var txt = 'Experience the power of Generative AI for Advanced System Log Troubleshooting powered by Open AI'; /* The text */
-var speed = 50; /* The speed/duration of the effect in milliseconds */
+let i = 0;
+let txt = 'Experience the power of Generative AI for Advanced System Log Troubleshooting powered by Open AI'; /* The text */
+let speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter(text) {
   if (i < txt.length) {
