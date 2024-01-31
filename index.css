@@ -1,6 +1,6 @@
 :root{
     --primary-color: #FEFEFE; 
-    --font-color-1: #333333;
+    --font-color-1: whitesmoke;
     --font-color-2: #0fcefd;
 }
 
@@ -15,16 +15,14 @@ body, html{
 
 
 /* Header and Navbar */
-header{
-    background-color: var(--primary-color);
-}
 
 .navbar{
-    height: 60px;
-    width: 100%;
+    width: 80%;
     border-radius: 0px 0px 10px 10px;
-    background: var(--primary-color) !important;
-    position: sticky;
+    background: rgba(8, 8, 8, 0.5) !important;
+    backdrop-filter: blur(3px) !important;
+    position: absolute;
+    margin-top: 20px;
     z-index: 1;
 }
 
@@ -42,7 +40,7 @@ header{
 }
 
 .navbar-brand, .nav-link{
-    color: #333333 !important;
+    color: var(--font-color-1) !important;
     font-family: "Tahoma";
 }
 
@@ -65,7 +63,7 @@ li{
 }
 
 .nav-link:hover{
-    color: black !important;
+    color: var(--font-color-2) !important;
 }
 
 .nav-link::before{
@@ -94,7 +92,7 @@ li{
 /*Main Hero Section */
 #hero-main{
     width: 100%;
-    height: 91vh;
+    height: 100vh;
     object-fit: cover;
     background: linear-gradient(rgba(0, 0, 0, 0.363),rgba(0, 0, 0, 0)), url(Assets/Hero1.jpg) no-repeat center / cover;
     position: relative;
@@ -105,7 +103,7 @@ li{
     flex-direction: column;
     position: absolute;
     right: 200px;
-    padding-top: 70px;
+    padding-top: 120px;
 }
 
 .hero-1-buttons{
@@ -174,11 +172,13 @@ li{
     height: 120vh;
     padding-top: 35px;
     color: white;
+    background-color: #000000;
 }
 
 #info-container{
     width: 100%;
     position: relative;
+    margin-top: 50px;
 }
 
 #hero-2-heading{
@@ -193,7 +193,7 @@ li{
 
 #underline-2{
     margin-top: -145px;
-    min-width: 230px;
+    min-width: 64%;
     height: 40px;
 }
 
@@ -219,20 +219,52 @@ li{
 #hero-2-side-2{
     position: relative;
 }
+#hero-2-side-2 img{
+    margin-top: 40px;
+}
 
 #corner-decor-1{
     position: absolute;
+    bottom: -50px;
     right: -47px;
+}
+
+#corner-decor-1-2{ 
+    position: absolute;
+    left: 10px;
+    top: -10px;
 }
 
 /*Third Section*/
 
 #hero-3{
     width: 100%;
-    height: 80vh;
+    min-height: 120vh;
+    height: auto;
     padding-top: 35px;
     background-color: #0e1111;
     color: white;
+}
+
+.hero-3-buttons{
+    margin-top: 16px;
+    width: 250px;
+    height: 70px;
+    background-color: transparent;
+    border-width: 2px;
+    font-size: 16px;
+    border-color: var(--font-color-2);
+}
+
+#section-3-buttons-container{
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.hero-3-buttons:hover{
+    background-color: transparent;
+    box-shadow: 0 0 20px var(--font-color-2);
+    border: 3px solid var(--font-color-2);
 }
 
 #hero-3-container{
@@ -240,6 +272,7 @@ li{
     height: 100%;
     
 }
+
 
 .hero-3-flex-items{
     height: 250px;
@@ -252,25 +285,15 @@ li{
     font-weight: 700;
 }
 
-
-#corner-decor-2{
-    position: absolute;
-    left: 10px;
-    top: -50px;
-
-}
-
-#corner-decor-3{
-    position: absolute;
-    right: 10px;
-    bottom: -50px;
-
+#section-3-content-box{
+    padding-top: 100px;
 }
 
 /*Section 4*/
 
 #hero-4{
     width: 100%;
+    min-height: 100vh;
     height: auto;
     background-color: #0fcefd;
 }
@@ -278,7 +301,7 @@ li{
 #hero-4-heading{
     margin-bottom: -50px;
     padding-top: 60px;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 #hero-4-heading h2{
@@ -286,36 +309,75 @@ li{
     color: #000000;
 }
 
-#underline-3{
-    margin-top: -40px;
-    height: 50px;
-    width: 165px;
-
+#section-4-list{
+    margin-top: 100px;
+    margin-left: 50px;
+    
 }
 
-#card-container{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    height: 100%;
+#section-4-list ul li{
+    background-color: #0e1111;
+    height: auto;
+    min-height: 70px;
+    border: none;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+.bold-span{
+    font-weight: 700;
+}
+
+/*Section 5*/
+
+#section-5{
     width: 100%;
-}
-
-.card{
-    min-height: 550px !important;
-    max-height: auto;
-    margin: 20px;
-    padding: 15px;
+    min-height: 90vh;
+    height: auto;
+    padding-top: 35px;
     background-color: #0e1111;
     color: white;
 }
 
-.card-button{
-    background-color:#0fcefd;
-    color: black;
+#section-5-info{
+    margin-top: -50px;
+    width: 100%;
+    position: relative;
 }
 
-.card-button:hover{
-    background-color:#0fcdfda6;
+#section-5-paragraph{
+    width: 100%
+}
+
+/*Video Section*/
+
+#video-section{
+    width: 100%;
+    height: 140vh;
+    padding-top: 35px;
+    color: white;
+    background-color: #00aced;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+#video-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+#video-section-heading h2{
+    color: black;
+    font-weight: 700;
+    margin-top: -40px;
 }
 
 /*Footer Section*/
@@ -413,6 +475,7 @@ li{
   {
     margin-bottom:30px
   }
+ 
 }
 @media (max-width:767px)
 {
@@ -516,8 +579,8 @@ li{
     #log-type-buttons{
         right: 120px;
     }
-    header{
-        padding-bottom: 20px;
+    #corner-decor-1-2{ 
+        display: none;
     }
   }
 @media (max-width: 832px) {
@@ -541,10 +604,6 @@ li{
   }
 
 @media (max-width: 610px) {
-    #hero-3{
-        height: 130vh;
-        padding-top: 150px;
-    } 
     #hero-2{
         height: 100vh;
     } 
