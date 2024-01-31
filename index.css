@@ -2,6 +2,9 @@
     --primary-color: #fefefe;
     --font-color-1: whitesmoke;
     --font-color-2: #0fcefd;
+    --white-color: white;
+    --black-bg: black;
+    --light-black-bg: #0e1111;
 }
 
 /*Universal Properties*/
@@ -169,9 +172,9 @@ li {
   bottom: 0;
   right: 100px;
   border-radius: 20px 20px 0px 0px;
-  border-top: 4px solid #fff;
-  border-right: 4px solid #fff;
-  border-left: 4px solid #fff;
+  border-top: 4px solid var(--white-color);
+  border-right: 4px solid var(--white-color);
+  border-left: 4px solid var(--white-color);
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(25px);
   padding-left: 30px;
@@ -179,7 +182,7 @@ li {
 }
 
 .section-1-headings {
-  color: white;
+  color: var(--white-color);
 }
 
 #section-1-heading-small {
@@ -210,8 +213,8 @@ li {
   width: 100%;
   height: 120vh;
   padding-top: 35px;
-  color: white;
-  background-color: #000000;
+  color: var(--white-color);
+  background-color: var(--black-bg);
 }
 
 
@@ -243,7 +246,7 @@ li {
   height: auto;
   padding-top: 35px;
   background-color: #0e1111;
-  color: white;
+  color: var(--white-color);
 }
 
 #section-3-buttons-container {
@@ -279,7 +282,7 @@ li {
   width: 100%;
   min-height: 100vh;
   height: auto;
-  background-color: #0fcefd;
+  background-color: var(--font-color-2);
 }
 
 #section-4-heading {
@@ -290,7 +293,7 @@ li {
 
 #section-4-heading h2 {
   font-weight: 700;
-  color: #000000;
+  color: var(--black-color);
 }
 
 #section-4-list {
@@ -299,7 +302,7 @@ li {
 }
 
 #section-4-list ul li {
-  background-color: #0e1111;
+  background-color: var(--light-black-bg);
   height: auto;
   min-height: 70px;
   border: none;
@@ -323,7 +326,7 @@ iframe {
   min-height: 90vh;
   height: auto;
   padding-top: 35px;
-  background-color: #0e1111;
+  background-color: var(--light-black-bg);
   color: white;
 }
 
@@ -350,7 +353,7 @@ iframe {
   height: 140vh;
   padding-top: 35px;
   color: white;
-  background-color: #00aced;
+  background-color: var(--font-color-2);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -365,7 +368,7 @@ iframe {
 }
 
 #video-section-heading h2 {
-  color: black;
+  color: var(--black-color);
   font-weight: 700;
   margin-top: -40px;
 }
@@ -373,7 +376,7 @@ iframe {
 /*Footer Section*/
 
 .site-footer {
-  background-color: #0e1111;
+  background-color: var(--light-black-bg);
   padding: 45px 0 20px;
   font-size: 15px;
   line-height: 24px;
